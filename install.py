@@ -35,7 +35,7 @@ else:
 import time
 print("""print("\033[32m/n Əsas Qurulum tamamlandı! Artıq Toolu işə salmaq üçün təlimatları yerinə yetirin:
 [*]Qurulum bitti. Klaviaturadan hər hansı bir şey yazıb ENTER basın və qurulumu bitirin.(bu proqramı dayadırın)
-[*]python Derchios.py (toolu işə salın)
+[*]python3 derchios.py (toolu işə salın)
 {Hazırladı---RedBith}
 """)
 a = input("--->")
