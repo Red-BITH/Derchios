@@ -58,8 +58,33 @@ def loading_animation2():
 
 loading_animation2()
 os.system("clear")
-
-
+import json
+from urllib.request import urlopen
+import os
+import socket
+import random
+import time
+import subprocess
+import signal
+import request
+print("""
+  _______________________________________
+ /             DERCHIOS QALASI           \
+/   _   _      from warband   _   _   _   \
+|  | |_| |_| |   _   _   _   | |_| |_| |  |
+|   \   _   /   | |_| |_| |   \   _   /   |
+|    | | | |     \       /     | | | |    |
+|    | |_| |______|     |______| |_| |    |
+|    |              ___              |    |
+|    |  _    _    (     )    _    _  |    |
+|    | | |  |_|  (       )  |_|  | | |    |
+|    | |_|       |       |       |_| |    |
+|   /            |_______|            \   |
+|  |___________________________________|  |
+\              Derchios Tool              /
+ \             By RED BITH               /
+  \_____________________________________/
+  """)
 
 
                                     
