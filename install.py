@@ -9,8 +9,8 @@ README.md faylını oxuduğunuz sayılır.
 txt = input("--->")
 if(txt == "1234567890" or "A aB bC cD dE eF fG gH hI iJ jK kL lM mN nO oP pQ qR rS sT tU uV vW wX xY yZ z"):
   os.system("clear")
-  os.system("apt-get update -y")
-  os.system("apt-get upgrade -y")
+  os.system("apt-get update ")
+  os.system("apt-get upgrade ")
   os.system("pip install pygame")
   os.system("pip install requests")
   os.system("pip3 install termcolor")
