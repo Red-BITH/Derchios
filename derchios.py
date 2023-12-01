@@ -66,8 +66,8 @@ import random
 import time
 import subprocess
 import signal
-import request
-print("""
+import requests
+print("""\033[32m
   _______________________________________
  /             DERCHIOS QALASI           \
 /   _   _      from warband   _   _   _   \
@@ -85,6 +85,31 @@ print("""
  \             By RED BITH               /
   \_____________________________________/
   """)
+print("""\033[34m
+Öncəliklə Derchiosu təcrübə etdiyiniz üçün təşəkkürlər!""")
+print("""\033[33mChange:(rəqəm)
+1 ---> Site adress\Ip port-scan\scan
+2 --->
+""")
+tool = input("--->")
+if(tool == "1"):
+ os.system("clear")
+ print("""\033[31mSeçiminiz: (1)
+ #####################################
+ # Method : port\scan                #
+ # By RED-BITH                       #
+ # Visit Our site! www.cyberdark.org #
+ #####################################
+ """)
+ ip = input("Website\Ip --->")
+ import os
+ os.system("nmap -sC -sV -sS" + ip")
+
+           
+
+
+
+
 
 
                                     
