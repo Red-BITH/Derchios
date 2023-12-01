@@ -67,6 +67,17 @@ import time
 import subprocess
 import signal
 import requests
+class Colors:
+     HEADER = '\033[95m'
+     BLUE = '\033[94m'
+     GREEN = '\033[92m'
+     YELLOW = '\033[93m'
+     RED = '\033[91m'
+     ENDC = '\033[0m'
+
+def print_colored(text, color):
+     print(color + text + Colors.ENDC)
+
 print("""\033[32m
   _______________________________________
  /             DERCHIOS QALASI           \
@@ -110,7 +121,7 @@ if(tool == "2"):
  os.system("clear")
  os.system("python tl1.py")
 if(tool == "3"):
- print_colored("""
+ print("""
      ###############################
      #  ATTACK- Ip melumat         #
      #   BY RED-BITH               #
