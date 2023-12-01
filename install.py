@@ -21,6 +21,7 @@ if(txt == "1234567890" or "A aB bC cD dE eF fG gH hI iJ jK kL lM mN nO oP pQ qR 
   os.system("python -m pip install --upgrade pip")
   os.system("python -m pip install --upgrade termcolor")
   os.system("clear")
+  os.system("apt install gobuster")
 
 else:
   os.system("clear")
@@ -34,6 +35,8 @@ else:
   os.system("python -m pip install --upgrade pip")
   os.system("python -m pip install --upgrade termcolor")
   os.system("clear")
+  os.system("apt install gobuster")
+
 import time
 print("""print("\033[32m/n Əsas Qurulum tamamlandı! Artıq Toolu işə salmaq üçün təlimatları yerinə yetirin:
 [*]Qurulum bitti. Klaviaturadan hər hansı bir şey yazıb ENTER basın və qurulumu bitirin.(bu proqramı dayadırın)
