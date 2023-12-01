@@ -43,8 +43,11 @@ print("""print("\033[32m/n Əsas Qurulum tamamlandı! Artıq Toolu işə salmaq 
 a = input("--->")
 if(a == "1234567890" or "A aB bC cD dE eF fG gH hI iJ jK kL lM mN nO oP pQ qR rS sT tU uV vW wX xY yZ z"):
   print("ok!")
+  os.system("chmod +x derchios.py")
 else:
   print("ok!")
+  os.system("chmod +x derchios.py")
+
   
 
 
