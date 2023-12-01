@@ -142,13 +142,13 @@ if(tool == "3"):
                own_ip_info = get_own_ip_info()
                print_colored(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
 
-     if(secim3 == '2'):
-      rabite = input("İP daxil et")
-      url = "https://ipinfo.io/" + rabite
-      response = urlopen(url)
-      data = json.load(response)
+ if(secim3 == '2'):
+  rabite = input("İP daxil et")
+  url = "https://ipinfo.io/" + rabite
+  response = urlopen(url)
+  data = json.load(response)
       
-      table_data = [
+  table_data = [
        ["IP", data["ip"]],
        ["city", data["city"]],
        ["Region", data["region"]],
@@ -163,9 +163,9 @@ if(tool == "3"):
        ["Privacy Detection", data.get("privacy", "N/A")]
       ]
       
-       from tabulate import tabulate
-       table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
-       print_colored(table, Colors.BLUE)
+  from tabulate import tabulate
+  table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
+  print_colored(table, Colors.BLUE)
 
  
 
