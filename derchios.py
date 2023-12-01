@@ -104,7 +104,7 @@ if(tool == "1"):
  """)
  ip = input("Website\Ip --->")
  import os
- os.system("nmap -sC -sV -sS" + ip")
+ os.system("nmap -sC -sV -sS" + ip)
 
 if(tool == "2"):
  import phonenumbers
