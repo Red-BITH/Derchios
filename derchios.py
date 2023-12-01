@@ -131,7 +131,7 @@ if(tool == "3"):
     
  print_colored("OZ ip niz haqqinda ? yaxud qarsi teref? ", Colors.BLUE)
  secim3 = input("SECIMINI ET--1-Oz ip; 2-qarsi ip::: ")
- secim = input("--->
+
  if secim3 == '1':
                def get_own_ip_info():
                 url = "https://ipinfo.io/json"
