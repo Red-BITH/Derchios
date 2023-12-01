@@ -119,7 +119,11 @@ if(tool == "2"):
  
  def main():
   clear_console()
-  print("CyberDark.Org & Rwoolx")
+  print("""\033[37m
+  ###################################
+  # Method: Telefon Nomresi Scan(2) #
+  ###################################
+  """)
   number = input("Telefon nömrəsini girin:")
   if number.startswith("+"):
    try:
