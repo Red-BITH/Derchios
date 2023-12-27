@@ -136,14 +136,13 @@ if(tool == "2"):
 if(tool == "3"):
  print("""
      ###############################
-     #  ATTACK- Ip melumat         #
+     #  ATTACK- Ip melumat(ip info)#
      #   BY RED-BITH               #
-     # ASAGIDAKI QAYDALARA EMEL ET #
      ###############################
      """, Colors.GREEN)
     
- print_colored("OZ ip niz haqqinda ? yaxud qarsi teref? ", Colors.BLUE)
- secim3 = input("SECIMINI ET--1-Oz ip; 2-qarsi ip::: ")
+ print_colored("1 --->Your IP ", Colors.BLUE + " " + "\033[31m 2 ---> Target IP")
+ secim3 = input("SEÇ\CHOOSE--->")
 
  if secim3 == '1':
                def get_own_ip_info():
