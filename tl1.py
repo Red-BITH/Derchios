@@ -13,7 +13,7 @@ def clear_console():
 def main():
     clear_console()
     print("\033[34mCyberDark.Org ---> RED-BITH /Telefon nom. scan/")
-    number = input("Telefon nömrəsini girin:")
+    number = input("Telefon nömrəsini girin--->")
 
     if number.startswith("+"):
         try:
