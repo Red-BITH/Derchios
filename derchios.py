@@ -81,7 +81,6 @@ def print_colored(text, color):
 print("""\033[32m
   _______________________________________
  /             DERCHIOS QALASI           \
-/   _   _      from warband   _   _   _   \
 |  | |_| |_| |   _   _   _   | |_| |_| |  |
 |   \   _   /   | |_| |_| |   \   _   /   |
 |    | | | |     \       /     | | | |    |
@@ -143,7 +142,7 @@ if(tool == "3"):
      ###############################
      """, Colors.GREEN)
     
- print_colored("1 --->Your IP ", Colors.BLUE + " " + "\033[31m 2 ---> Target IP")
+ print("1 --->Your IP ", Colors.BLUE + " " + "\033[31m 2 ---> Target IP")
  secim3 = input("SEÇ\CHOOSE--->")
 
  if secim3 == '1':
@@ -154,7 +153,7 @@ if(tool == "3"):
                 return data
 
                own_ip_info = get_own_ip_info()
-               print_colored(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
+               print(json.dumps(own_ip_info, indent=4), Colors.YELLOW)
 
  if(secim3 == '2'):
   rabite = input("İP daxil et")
@@ -179,11 +178,11 @@ if(tool == "3"):
       
   from tabulate import tabulate
   table = tabulate(table_data, headers=["Field", "Value"], tablefmt="grid")
-  print_colored(table, Colors.BLUE)
+  print(table, Colors.BLUE)
 
  
 if(tool == "4"):
- print_colored("""\033[31m
+ print("""\033[31m
  ###########################
  #  T00L - By RED_BITH     #
  #  ATTACK- DDOS           #
@@ -203,6 +202,31 @@ if(tool == "4"):
    sayac += 1
    print("\033[92mHUCUM EDILIR , gonderilen byte:::%s\033[0m" % (sayac))
    
+
+elif(tool == "5"):
+ print("""\033[31m
+ ###########################
+ #  T00L - By RED_BITH     #
+ #  ATTACK- GOBUSTER       #
+ #  !@#!#!#!#!#!##!#!#     #
+ ###########################
+ """)
+ print("\033[34m[*]Note! You need Change wordlist!")
+ print("""\033[33m[*WORDLISTS*]
+ [*] 1 ---> WordList 1
+ [*] 2 ---> WordList 2 (biggest)
+ """)
+ buster = input("--->")
+ if(buster == "1"):
+  gourl = input("URL Daxil et! --->")
+  os.system("gobuster dir -u" + gourl + "-w /txt/wordlist1.txt"
+ elif(buster == "2"):
+  gourl2 = input("URL Daxil et! --->")
+  os.system("gobuster dir -u" + gourl2 + "-w /txt/wordlist2.txt"
+            
+
+
+
 
 
                                     
