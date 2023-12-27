@@ -110,14 +110,27 @@ if(tool == "1"):
  #####################################
  # Method : port\scan                #
  # By RED-BITH                       #
- # Visit Our site! www.cyberdark.org #
+ # Visit my site! redbithroot.con.tc #
  #####################################
  """)
- ip = input("Website\Ip --->")
- import os
- os.system("nmap -sC -sV " + ip)
-
-if(tool == "2"):
+ print("""\033[33m
+ [*] Note! You can change Normal or Agressife scan. 
+ """)
+ print("""
+ CHANGES:
+ [*] 1 --> Normal
+ [*] 2 --> Agressive
+ """)
+ scannovu = input("-->")
+ if(scannovu == "1"):
+  ip = input("Website\Ip --->")
+  import os
+  os.system("nmap -sC -sV " + ip)
+ elif(scannovu == "2"):
+  ip1 = input("Write IP --->")
+  os.system("nmap -sC -sV -A" + ip1)
+  
+if(tool == "2"): 
  os.system("clear")
  os.system("python tl1.py")
 if(tool == "3"):
