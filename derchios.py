@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+os.system("clear")
 print("""\033[32m
 ######   #######  ######    #####   ### ###   ######   #####    #####   
  ## ###   ##  ##   ##  ##  ##   ##   ## ##      ##    ### ###  ##   ##  
@@ -103,6 +104,7 @@ print("""\033[33mChange:(rəqəm)
 3 ---> Ip More Info
 4 ---> Ddos
 5 ---> Gobuster
+6 ---> Mac Change
 """)
 tool = input("--->")
 if(tool == "1"):
@@ -223,7 +225,42 @@ elif(tool == "5"):
  elif(buster == "2"):
   gourl2 = input("URL Daxil et! --->")
   os.system("gobuster dir -u" + gourl2 + "-w /txt/wordlist2.txt"
-            
+
+elif(tool == "6"):
+  os.system("clear")
+  os.system("ifconfig")
+  print("""\033[32m
+  
+  ________________________
+  #1 ---> Mac Change     #
+  #2 ---> Return Orginal #  
+  -------------------------
+  """)
+  macsecim = input("--->")
+  if(macsecim == "1"):
+   os.system("clear")
+   os.system("ifconfig eth0 down")
+   os.system("macchanger -r up")
+   os.system("clear")
+   print("\033[34mNEW MAC CHANGED")
+   os.system("ifconfig")
+  if(macsecim == "2"):
+   os.system("clear")
+   os.system("ifconfig eth0 down")
+   os.system("macchanger -p up")
+   os.system("clear")
+   print("\033[34mORIGINAL MAC CHANGED")
+   os.system("ifconfig")
+  
+   
+
+
+
+
+
+
+
+
 
 
 
