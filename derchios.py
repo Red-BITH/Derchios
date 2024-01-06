@@ -225,7 +225,7 @@ elif(tool == "5"):
  bstr = buster
  if(bstr == "2"):
   gourl2 = input("URL Daxil et! --->")
-  os.system("gobuster dir -u" + gourl2 + "-w /txt/wordlist2.txt"
+  os.system("gobuster dir -u" + gourl2 + "-w /txt/wordlist2.txt")
 
 elif(tool == "6"):
   os.system("clear")
