@@ -191,7 +191,7 @@ if(tool == "4"):
  #  READY FOR ATTACK       #
  ###########################
  """)
- dos = input("Seçim::: ")
+ dos = 1
  if(dos == "1"):
   hedef_ip = input("TARGET IP --->")
   hedef_port = int(input("port --->"))
